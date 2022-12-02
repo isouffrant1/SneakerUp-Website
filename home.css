@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+    font-family: 'Secular One', sans-serif;
+    background-color: rgb(247, 237, 247);
+    
+}
+
+/*home.html*/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(40, 1, 95);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#navbar li a:hover {
+    color: rgb(255, 0, 38);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+#navbar li a:active {
+    color: rgb(255, 0, 38);
+    text-decoration: underline;
+}
+
+#motto h2{
+    z-index: 2;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  opacity: 0;
+  border-radius: 5px;
+  transition: 1.5s;
+  margin-top: 315px;
+}
+
+.show {
+    opacity: 1;
+}
+
+.text {
+    margin-top: 310px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+}
+
+.text p {
+    font-size: 22px;
+}
+
+.text h2 {
+    font-size: 38px;
+    color: rgb(40, 1, 95);
+}
+
+.animation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji {
+    font-size: 90px;
+    position: absolute;
+}
+
+/*about.html*/
+
+#iven {
+    background-image: url("iven.png");
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 18% right 0;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#iven h1 {
+    font-size: 42px;
+    color: rgb(40, 1, 95);
+}
+
+#about {
+    padding: 0px 100px;
+}
+
+#about h2 {
+    color: rgb(40, 1, 95);
+}
+
+#about p {
+    font-size: 20px;
+}
+
+#bold {
+    font-weight: 600;
+}
+
+/*site.html*/
+
+#description {
+    padding: 0 100px;
+}
+
+#description h2 {
+    color: rgb(40, 1, 95);
+}
+
+#description p {
+    font-size: 20px;
+}
+
+#description figure {
+    float: right;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(40, 1, 95);
+    padding: 8px;
+}
+
+#description figcaption {
+    text-align: center;
+    background-color: rgb(40, 1, 95);
+    color: white;
+    padding: 3px;
+    font-weight: 600;
+}
+
+#sneaker {
+    height: 325px;
+    width: 350px;
+    float: right;
+}
+
+/*checklist.html*/
+
+#checklist h2 {
+    text-align: center;
+    color: rgb(40, 1, 95);
+    padding-top: 25px;
+    font-size: 42px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form p {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+[type="checkbox"] { 
+    opacity: 0;
+}
+
+[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(40, 1, 95);
+    line-height: 25px;
+}
+
+[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid #fff;
+    background: white;
+}
+
+[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid #28015F;
+    background: white;
+}
+
+[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid #28015F;
+    background-color: #28015F;
+    background-image: url(whitecheck.png);
+    background-size: contain;
+    background-position: .25px 2px;
+}
+
+/*memberlogin.php*/
+form {
+    color: rgb(247, 237, 247);
+}
+

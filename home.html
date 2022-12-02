@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SneakerUp</title>
+        <link rel="stylesheet" href="home.css" />
+        <script src="home.js" defer></script>
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="logoipsum-226.svg" class="logo"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="site.html">Site Description</a></li>
+                    <li><a href="checklist.html">Checklist</a></li>
+                    <li><a href="memberlogin.php">Member</a></li>
+                </ul>
+            </div>
+        </section>
+        <main>
+        <div class="slider">
+            <div class="slides">
+                <img src="jordan.png" alt="" class="img img-1 show">
+                <img src="nike.png" alt="" class="img img-2">
+                <img src="yeezy.png" alt="" class="img img-3">           
+            </div> 
+        </div>
+        <div class="text">
+            <h2>Welcome</h2>
+            <p>Welcome to the SneakerUp sneaker consignment store! We sell all the hype sneakers from Jordans to Yeezys. We will also buy your sneakers so bring them in store. We are open Monday to Saturday from 11am to 9pm. We are happy to meet every single one of you guys!</p>
+        </div>
+        <div class="animation">
+            <div class="emoji">👟</div>
+            <svg class="emojiline" width="600" height="600">
+                <path stroke="rgb(40, 1, 95)" fill="none" d="M 100 350 L 200 200 L 250 300 L 300 250 L 350 300 L 400 200 L 500 350 Z"></path>
+            </svg>
+            <script src="anime.min.js"></script>
+            <script>
+                let path = anime.path('.emojiline path');
+
+                anime({
+                    targets: '.emoji',
+                    translateX: path('x'),
+                    translateY: path('y'),
+                    easing: 'linear',
+                    duration: 5000,
+                    loop: true
+                });
+            </script>
+        </div>
+        </main>
+    </body>
+</html>
